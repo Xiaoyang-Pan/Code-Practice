@@ -42,7 +42,7 @@ vector<int> findSubset(vector<int> aSet, int aVal){
     vector<int> theSubset = {};
     int i = 0;
     while(aVal >0){
-        if(aVal&1 ==1){
+        if((aVal&1) == 1){
             theSubset.push_back(aSet[i]);
         }
         aVal>>=1;
